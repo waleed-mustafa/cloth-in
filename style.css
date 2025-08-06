@@ -1,0 +1,138 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: Arial, sans-serif;
+}
+
+.headerMain {
+  width: 100%;
+  height: 40px;
+  min-height: fit-content;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+.nav-items a {
+  color: red;
+}
+
+.logo {
+  color: orange;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 10px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+button {
+  background-color: orange;
+}
+
+.qazi {
+  background-color: yellow;
+  padding: 5px;
+  border: none;
+  border-radius: 12%;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  text-align: center;
+}
+
+p {
+  color: white;
+}
+
+.galleryImg {
+  height: 200px;
+  width: 200px;
+}
+
+body {
+  background-color: thistle;
+}
+
+.brands {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 5px 0px;
+}
+
+.galleryImages {
+  width: 70%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 0px;
+}
+
+.searchBar {
+  padding: 3px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.searchBtn {
+  padding: 4px 16px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0px 5px;
+}
+
+@media only screen and (max-width: 750px) {
+  .nav-items {
+    display: none;
+  }
+  .galleryImages {
+    width: 95%;
+  }
+  .headerMain {
+    justify-content: space-between;
+  }
+
+  .searchBar {
+    padding: 2px 10px;
+    width: 170px;
+  }
+  .searchBtn {
+    padding: 2px 10px;
+  }
+  .logo {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .searchBar {
+    display: none;
+  }
+  .searchBtn {
+    display: none;
+  }
+}
